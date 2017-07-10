@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>demo</title>
+	<script src="js/jquery.min.js"></script>
+	<style>
+		*{margin: 0; padding: 0;}
+		body,html{ overflow: hidden;}
+		.slide{ text-align: center; font-size: 30px; vertical-align: middle;}
+		
+		.item5{ background: #f5f5f5;}
+		.item1{ background: #ccc;}
+		.item2{ background: #ddd;}
+		.item3{ background: #f5f5f5;}
+		.item4{ background: #999;}
+	</style>
+</head>
+<body>
+<div class="main">
+	<div class="item1 slide">0</div>
+	<div class="item2 slide"><div class="txt">1234567890</div></div>
+	<div class="item3 slide">2</div>
+	<div class="item4 slide">3</div>
+	<div class="item5 slide">4</div>
+</div>
+</body>
+</html>
+<script src="js/sliding.js"></script>
+<script>
+$('.main').Sliding({
+	slide:'.slide',
+	transverse:true
+});
+</script>
